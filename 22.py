@@ -4,7 +4,6 @@ Write a program to accept a string from the user and display characters that are
 For example, str = "pynative" so you should display ‘p’, ‘n’, ‘t’, ‘v’.
 """
 
-
 # def cift():
 #     str = input("string gir :")
 #     e = tuple(str)
@@ -18,16 +17,30 @@ For example, str = "pynative" so you should display ‘p’, ‘n’, ‘t’, �
 
 """
 Exercise 4: Remove first n characters from a string
-Write a program to remove characters from a string starting from zero up to n and return a new string.
+Write a program to remove characters from a string starting 
+from zero up to n and return a new string.
 
 For example:
 
-remove_chars("pynative", 4) so output must be tive. Here we need to remove first four characters from a string.
-remove_chars("pynative", 2) so output must be native. Here we need to remove first two characters from a string.
+remove_chars("pynative", 4) so output must be tive. 
+Here we need to remove first four characters from a string.
+remove_chars("pynative", 2) so output must be native. 
+Here we need to remove first two characters from a string.
 Note: n must be less than the length of the string.
 
 
 """
+
+# def remove_chars():
+#     a = input("string gir:")
+#     x = list(a)
+#     b = int(input("kaç harfi silinecek ?:"))
+#
+#     del x[0:b]
+#
+#     print("".join(x))
+#
+# remove_chars()
 
 """
 
@@ -145,7 +158,6 @@ For example, suppose the taxable income is 45000 the income tax payable is
 10000*0% + 10000*10%  + 25000*20% = $6000.
 
 """
-
 
 """
 
