@@ -61,7 +61,6 @@ result is False
 
 """
 
-
 # def isSame():
 #     z = []
 #     i = input("\n" + "sayı dizisini girin, girişi biritmek için q girin :")
@@ -93,6 +92,21 @@ Divisible by 5
 55
 
 """
+
+
+# def divisible():
+#     given = [10, 20, 33, 46, 55]
+#     z = []
+#
+#     for i in given:
+#
+#         if i % 5 == 0:
+#             z.append(i)
+#     print("\n Divisible by 5 : ")
+#     print(z)
+#
+#
+# divisible()
 
 """
 
