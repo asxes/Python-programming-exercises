@@ -61,6 +61,24 @@ result is False
 
 """
 
+
+# def isSame():
+#     z = []
+#     i = input("\n" + "sayı dizisini girin, girişi biritmek için q girin :")
+#
+#     while i != "q":
+#         z.append(i)
+#         print(z)
+#         i = input("sayı dizisini girin :" + "\n")
+#
+#     if z[0] == z[-1]:
+#         return print("ilk eleman :" + z[0] + "\n" + " son eleman : " + z[-1] + "   EŞİT" + "\n")
+#     else:
+#         return print("ilk eleman :" + z[0] + "\n" + " son eleman : " + z[-1] + " EŞİT DEĞİL!!!" + "\n")
+#
+#
+# isSame()
+
 """
 
 Exercise 6: Display numbers divisible by 5 from a list
