@@ -93,7 +93,6 @@ Divisible by 5
 
 """
 
-
 # def divisible():
 #     given = [10, 20, 33, 46, 55]
 #     z = []
@@ -121,6 +120,20 @@ Expected Output:
 Emma appeared 2 times
 
 """
+# çözülmedi
+
+# x = input('Enter your sentence :')
+# y = x.split()
+# z = len(y)
+# p = []
+#
+# i = 0
+# while i <= z:
+#     for j in y:
+#         if j == y[j + 1]: p.append(j)
+#     i += 1
+#
+# print(p)
 
 """
 
@@ -133,6 +146,19 @@ Exercise 8: Print the following pattern
 Hint: Print Pattern using for loop
 
 """
+
+# çözülmedi
+
+# def ucgen():
+#     j = int(input("Bir sayı gir :"))
+#     i = 1
+#     for i in range(1,j) :
+#         print(i)
+#         print("\n")
+#         i+=1
+#
+#
+# ucgen()
 
 """
 
@@ -150,6 +176,22 @@ original number 125
 No. given number is not palindrome number
 
 """
+# tam çözülmedi
+
+# def pandolin():
+#     i = str(input("\nBir sayı gir:"))
+#     z = list(i)
+#     x=[]
+#     x=z.sort()
+#
+#     print(x)
+#     if z == x:
+#         print(i + " bir pandolin sayıdır ")
+#     else:
+#         print(i + " bir pandolin sayı değildir! ")
+#
+#
+# pandolin()
 
 """
 
@@ -168,6 +210,23 @@ Expected Output:
 result list: [25, 35, 40, 60, 90]
 
 """
+#çözüldü
+# def oddy():
+#     list1 = [10, 20, 25, 30, 35]
+#     list2 = [40, 45, 60, 75, 90]
+#     z = []
+#     i = 0
+#     while i <= 4:
+#         if list1[i] % 2 != 0 :
+#             z.append(list1[i])
+#         if list2[i] % 2 == 0 :
+#             z.append(list2[i])
+#
+#         i += 1
+#
+#     print(z)
+#
+# oddy()
 
 """
 
