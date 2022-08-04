@@ -304,7 +304,6 @@ See: How two use nested loops in Python
 
 """
 
-
 # def carpimTablosu():
 #     z = []
 #     i = 1
@@ -333,6 +332,19 @@ Hint: Print Pattern using for loop
 
 """
 
+
+# def yildiz():
+#     i = 1
+#     j = 9
+#     while i <= 10:
+#         while 0 < j <= 9:
+#             print('*' * (j - 1))
+#             j -= 1
+#     i += 1
+#
+#
+# yildiz()
+
 """
 
 Exercise 15: Write a function called exponent(base, exp) that returns an int value of base raises to the power of exp.
@@ -355,3 +367,11 @@ i.e. (5 *5 * 5 *5 = 625)
 
 
 """
+taban=int(input("taban gir:"))
+us = int(input("us gir :"))
+
+def usAlma(taban,us):
+    x=taban**us
+    print(x)
+
+usAlma(taban,us)
