@@ -367,11 +367,142 @@ i.e. (5 *5 * 5 *5 = 625)
 
 
 """
-taban=int(input("taban gir:"))
-us = int(input("us gir :"))
+# taban=int(input("taban gir:"))
+# us = int(input("us gir :"))
+#
+# def usAlma(taban,us):
+#     x=taban**us
+#     print(x)
+#
+# usAlma(taban,us)
 
-def usAlma(taban,us):
-    x=taban**us
-    print(x)
+#****************************INTERMEDIATE**********************
 
-usAlma(taban,us)
+"""
+Exercise 1: Reverse each word of a string
+Given:
+
+str = 'My Name is Jessa'
+Expected Output
+
+yM emaN si asseJ
+
+"""
+
+"""
+Exercise 2: Read text file into a variable and replace all newlines with space
+Given: Assume you have a following text file (sample.txt).
+
+Line1
+line2
+line3
+line4
+line5
+Expected Output:
+
+Line1 line2 line3 line4 line5
+"""
+
+"""
+Exercise 3: Remove items from a list while iterating
+Description:
+
+In this question, You need to remove items from a list while iterating but without creating a different copy of a list.
+
+Remove numbers greater than 50
+
+Given:
+
+number_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+Expected Output: -
+
+[10, 20, 30, 40, 50]
+
+"""
+
+"""
+Exercise 4: Reverse Dictionary mapping
+Given:
+
+ascii_dict = {'A': 65, 'B': 66, 'C': 67, 'D': 68}
+Expected Output:
+
+{65: 'A', 66: 'B', 67: 'C', 68: 'D'}
+"""
+
+"""
+Exercise 5: Display all duplicate items from a list
+Given:
+
+sample_list = [10, 20, 60, 30, 20, 40, 30, 60, 70, 80]
+Expected Output: -
+
+[20, 60, 30]
+"""
+
+"""
+Exercise 6: Filter dictionary to contain keys present in the given list
+Given:
+
+# Dictionary
+d1 = {'A': 65, 'B': 66, 'C': 67, 'D': 68, 'E': 69, 'F': 70}
+
+# Filter dict using following keys
+l1 = ['A', 'C', 'F']
+Expected Output: -
+
+new dict {'A': 65, 'C': 67, 'F': 70}
+"""
+
+"""
+Exercise 7: Print the following number pattern
+1 1 1 1 1 
+2 2 2 2 
+3 3 3 
+4 4 
+5
+
+"""
+
+"""
+Exercise 8: Create an inner function
+Question description: -
+
+Create an outer function that will accept two strings, x and y. (x= 'Emma' and y = 'Kelly'.
+Create an inner function inside an outer function that will concatenate x and y.
+At last, an outer function will join the word 'developer' to it.
+Expected Output: -
+
+EmmaKellyDevelopers
+"""
+
+"""
+Exercise 9: Modify the element of a nested list inside the following list
+Change the element 35 to 3500
+
+Given:
+
+list1 = [5, [10, 15, [20, 25, [30, 35], 40], 45], 50]
+Expected Output: -
+
+[5, [10, 15, [20, 25, [30, 3500], 40], 45], 50]
+"""
+
+"""
+Exercise 10: Access the nested key increment from the following dictionary
+Given:
+
+emp_dict = {
+    "company": {
+        "employee": {
+            "name": "Jess",
+            "payable": {
+                "salary": 9000,
+                "increment": 12
+            }
+        }
+    }
+}
+
+"""
+
