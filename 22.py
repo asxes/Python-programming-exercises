@@ -210,7 +210,7 @@ Expected Output:
 result list: [25, 35, 40, 60, 90]
 
 """
-#çözüldü
+# çözüldü
 # def oddy():
 #     list1 = [10, 20, 25, 30, 35]
 #     list2 = [40, 45, 60, 75, 90]
@@ -243,7 +243,6 @@ For example, If the given int is 7536, the output shall be “6 3 5 7“, with a
 # reverse()
 
 
-
 """
 
 Exercise 12: Calculate income tax for the given income by adhering to the below rules
@@ -259,38 +258,34 @@ For example, suppose the taxable income is 45000 the income tax payable is
 
 """
 
-def income():
-    t = int(input('Whats your income $ :'))
-    x=int(t/10000)
-    print(x)
 
-    if t<10000 :
-        print("borcunuz :$0")
-    if 10000<=t<20000 :
-        print("borcunuz :$1000")
-    if t>20000 :
-        i=0
-        while i<=x :
-            if x==1:
-                print("borcunuz :$0")
-                break
-            elif 1<=x<2 :
-                print("borcunuz :$1000")
-            elif  i>=x :
-                y=str((x-i)*10000)
-                print("borcunuz :$1000 +$2000"+y)
-income()
+# def income():
+#     t = int(input('Whats your income $ :'))
+#     x = int(t / 10000)
+#     y = str(x)
+#     print("Aşama Sayısı:" + y)
+#
+#     if t < 10000:
+#         print("borcunuz :$0")
+#     if 10000 <= t < 20000:
+#         print("borcunuz :$1000")
+#     if t > 20000:
+#         z = str((x - 2) * 2000)
+#         w = ((x - 2) * 2000) + 3000
+#         q = str(w)
+#         print("borcunuz :$1000 +$2000" + " +$" + z + "=" + "$" + q)
+#
+#
+# income()
 
-    # if x==1 :
-    #     i=0
-    # elif x==2 :
-    #     tax2 = t*0.1
-    # elif x==3 :
-    #     tax3 =t*0.2+tax2+tax1
+# if x==1 :
+#     i=0
+# elif x==2 :
+#     tax2 = t*0.1
+# elif x==3 :
+#     tax3 =t*0.2+tax2+tax1
 
 income()
-
-
 
 """
 
