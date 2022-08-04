@@ -258,7 +258,6 @@ For example, suppose the taxable income is 45000 the income tax payable is
 
 """
 
-
 # def income():
 #     t = int(input('Whats your income $ :'))
 #     x = int(t / 10000)
@@ -285,8 +284,6 @@ For example, suppose the taxable income is 45000 the income tax payable is
 # elif x==3 :
 #     tax3 =t*0.2+tax2+tax1
 
-income()
-
 """
 
 Exercise 13: Print multiplication table form 1 to 10
@@ -304,7 +301,25 @@ Expected Output:
 10 20 30 40 50 60 70 80 90 100 
 See: How two use nested loops in Python
 
+
 """
+
+
+# def carpimTablosu():
+#     z = []
+#     i = 1
+#     j = 0
+#     while i <= 10:
+#         while j <= 9:
+#             z.append(i * (j + 1))
+#             j += 1
+#         print(z)
+#         z = []
+#         j = 0
+#         i += 1
+#
+#
+# carpimTablosu()
 
 """
 
