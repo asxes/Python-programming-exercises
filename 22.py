@@ -332,7 +332,6 @@ Hint: Print Pattern using for loop
 
 """
 
-
 # def yildiz():
 #     i = 1
 #     j = 9
@@ -376,7 +375,7 @@ i.e. (5 *5 * 5 *5 = 625)
 #
 # usAlma(taban,us)
 
-#****************************INTERMEDIATE**********************
+# ****************************INTERMEDIATE**********************
 
 """
 Exercise 1: Reverse each word of a string
@@ -388,6 +387,22 @@ Expected Output
 yM emaN si asseJ
 
 """
+
+
+def reverse2():
+    str = 'My Name is Jessa'
+    for a in str :
+
+        if a!='' :
+            x = list(str, )
+
+
+    print(x[::-1])
+
+
+
+
+reverse2()
 
 """
 Exercise 2: Read text file into a variable and replace all newlines with space
@@ -505,4 +520,3 @@ emp_dict = {
 }
 
 """
-
