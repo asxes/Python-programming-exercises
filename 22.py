@@ -389,20 +389,30 @@ yM emaN si asseJ
 """
 
 
-def reverse2():
-    str = 'My Name is Jessa'
-    for a in str :
+# Exercise to reverse each word  of a string
 
-        if a!='' :
-            x = list(str, )
+            #çözemedim
+
+# def reverse_words(Sentence):
+#     # Split string on whitespace
+#     words = Sentence.split(" ")
+#     print(words)
+#
+#     # iterate list and reverse each word using ::-1
+#     new_word_list = [word[::-1] for word in words]
+#
+#     print(new_word_list)
+#
+#     # Joining the new list of words
+#     res_str = " ".join(new_word_list)
+#     return res_str
 
 
-    print(x[::-1])
+# # Given String
+# str1 = "My Name is Jessa"
+# print(reverse_words(str1))
 
 
-
-
-reverse2()
 
 """
 Exercise 2: Read text file into a variable and replace all newlines with space
@@ -417,6 +427,14 @@ Expected Output:
 
 Line1 line2 line3 line4 line5
 """
+
+# f = open("1.txt","r")
+#
+# x= f.read()
+# print(x)
+# y=x.replace("\n","  ")
+#
+# print(y)
 
 """
 Exercise 3: Remove items from a list while iterating
