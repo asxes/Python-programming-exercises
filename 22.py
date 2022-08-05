@@ -388,10 +388,9 @@ yM emaN si asseJ
 
 """
 
-
 # Exercise to reverse each word  of a string
 
-            #çözemedim
+# çözemedim
 
 # def reverse_words(Sentence):
 #     # Split string on whitespace
@@ -413,7 +412,6 @@ yM emaN si asseJ
 # print(reverse_words(str1))
 
 
-
 """
 Exercise 2: Read text file into a variable and replace all newlines with space
 Given: Assume you have a following text file (sample.txt).
@@ -427,14 +425,14 @@ Expected Output:
 
 Line1 line2 line3 line4 line5
 """
-
-f = open("1.txt","r")
-
-x= f.read()
-print(x)
-y=x.replace("\n","  ")
-
-print(y)
+#
+# f = open("1.txt","r")
+#
+# x= f.read()
+# print(x)
+# y=x.replace("\n","  ")
+#
+# print(y)
 
 """
 Exercise 3: Remove items from a list while iterating
@@ -452,6 +450,36 @@ Expected Output: -
 [10, 20, 30, 40, 50]
 
 """
+""" Benim çözümüm"""
+# number_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+#
+# print(number_list)
+# number_list.pop(5)
+# number_list.pop(5)
+# number_list.pop(5)
+# number_list.pop(5)
+# number_list.pop(5)
+# print(number_list)
+
+""" Pynative çözümü"""
+
+# number_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# i = 0
+# # get list's size
+# n = len(number_list)
+# # iterate list till i is smaller than n
+# while i < n:
+#     # check if number is greater than 50
+#     if number_list[i] > 50:
+#         # delete current index from list
+#         del number_list[i]
+#         # reduce the list size
+#         n = n - 1
+#     else:
+#         # move to next item
+#         i = i + 1
+# print(number_list)
+
 
 """
 Exercise 4: Reverse Dictionary mapping
@@ -462,7 +490,12 @@ Expected Output:
 
 {65: 'A', 66: 'B', 67: 'C', 68: 'D'}
 """
+# çözemedim
 
+# ascii_dict = {'A': 65, 'B': 66, 'C': 67, 'D': 68}
+# # Reverse mapping
+# new_dict = {value: key for key, value in ascii_dict.items()}
+# print(new_dict)
 """
 Exercise 5: Display all duplicate items from a list
 Given:
@@ -472,6 +505,18 @@ Expected Output: -
 
 [20, 60, 30]
 """
+
+sample_list = [10, 20, 60, 30, 20, 40, 30, 60, 70, 80]
+
+
+z = []
+i = 0
+while i <= 8:
+    while j < 8 :
+        if sample_list[i]==sample_list[i + 1] :
+            z.append(sample_list[i])
+    i += 1
+print(z)
 
 """
 Exercise 6: Filter dictionary to contain keys present in the given list
