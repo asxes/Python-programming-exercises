@@ -428,13 +428,13 @@ Expected Output:
 Line1 line2 line3 line4 line5
 """
 
-# f = open("1.txt","r")
-#
-# x= f.read()
-# print(x)
-# y=x.replace("\n","  ")
-#
-# print(y)
+f = open("1.txt","r")
+
+x= f.read()
+print(x)
+y=x.replace("\n","  ")
+
+print(y)
 
 """
 Exercise 3: Remove items from a list while iterating
