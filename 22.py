@@ -593,6 +593,20 @@ Expected Output: -
 
 [5, [10, 15, [20, 25, [30, 3500], 40], 45], 50]
 """
+# list1 = [5, [10, 15, [20, 25, [30, 35], 40], 45], 50]
+#
+# x= list1[1]
+# y=x[2]
+# z=y[2]
+#
+# z[1] = 3500
+#
+# print(list1)
+
+
+
+
+
 
 """
 Exercise 10: Access the nested key increment from the following dictionary
@@ -611,3 +625,21 @@ emp_dict = {
 }
 
 """
+# emp_dict = {
+#     "company": {
+#         "employee": {
+#             "name": "Jess",
+#             "payable": {
+#                 "salary": 9000,
+#                 "increment": 12
+#             }
+#         }
+#     }
+# }
+#
+#
+# # print(emp_dict['company']['employee']['payable']['increment'])
+# emp_dict['company']['employee']['payable']['increment'] = 16
+#
+# print(emp_dict)
+
