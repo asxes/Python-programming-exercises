@@ -506,17 +506,30 @@ Expected Output: -
 [20, 60, 30]
 """
 
-sample_list = [10, 20, 60, 30, 20, 40, 30, 60, 70, 80]
 
 
-z = []
-i = 0
-while i <= 8:
-    while j < 8 :
-        if sample_list[i]==sample_list[i + 1] :
-            z.append(sample_list[i])
-    i += 1
-print(z)
+
+    # while i <= 8:
+    #     if sample_list[j] == sample_list[i + 1]:
+    #         z.append(sample_list[i])
+    #     else :
+    #         del sample_list[i]
+    #     i += 1
+    #
+    # i = 0
+
+
+# /*****/ PYnative çöcümü
+
+# import collections
+#
+# sample_list = [10, 20, 60, 30, 20, 40, 30, 60, 70, 80]
+#
+# duplicates = []
+# for item, count in collections.Counter(sample_list).items():
+#     if count > 1:
+#         duplicates.append(item)
+# print(duplicates)
 
 """
 Exercise 6: Filter dictionary to contain keys present in the given list
@@ -541,6 +554,21 @@ Exercise 7: Print the following number pattern
 5
 
 """
+
+# print("1"*5,end='  ')
+# print("\n")
+# print("2"*4,end=' ')
+# print("\n")
+#
+# print("3"*3,end=' ')
+# print("\n")
+#
+# print("4"*2,end=' ')
+# print("\n")
+#
+# print("5"*1,end=' ')
+
+
 
 """
 Exercise 8: Create an inner function
