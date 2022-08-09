@@ -506,17 +506,14 @@ Expected Output: -
 [20, 60, 30]
 """
 
-
-
-
-    # while i <= 8:
-    #     if sample_list[j] == sample_list[i + 1]:
-    #         z.append(sample_list[i])
-    #     else :
-    #         del sample_list[i]
-    #     i += 1
-    #
-    # i = 0
+# while i <= 8:
+#     if sample_list[j] == sample_list[i + 1]:
+#         z.append(sample_list[i])
+#     else :
+#         del sample_list[i]
+#     i += 1
+#
+# i = 0
 
 
 # /*****/ PYnative çöcümü
@@ -569,7 +566,6 @@ Exercise 7: Print the following number pattern
 # print("5"*1,end=' ')
 
 
-
 """
 Exercise 8: Create an inner function
 Question description: -
@@ -602,10 +598,6 @@ Expected Output: -
 # z[1] = 3500
 #
 # print(list1)
-
-
-
-
 
 
 """
@@ -643,7 +635,8 @@ emp_dict = {
 #
 # print(emp_dict)
 
-#/************************************************************************************************************************/
+# /************************************************************************************************************************/
+# /**************************************             LOOPS              *************************************************/
 
 
 """
@@ -665,8 +658,10 @@ Expected output:
 Show Solution
 
 """
-
-
+# i=1
+# while i<11 :
+#     print(i)
+#     i+=1
 
 
 """
@@ -686,6 +681,28 @@ Show Hint
 Show Solution
 
 """
+# i = 1
+# j = 1
+# for j in range(j):
+#     while j <= 5:
+#         print(j)
+#     j += 1
+
+# print("Number Pattern ")
+#
+# # Decide the row count. (above pattern contains 5 rows)
+# row = 5
+# start: 1
+# stop: row+1 (range never include stop number in result)
+# step: 1
+# run loop 5 times
+# for i in range(1, row + 1, 1):
+#     # Run inner loop i+1 times
+#     for j in range(1, i + 1):
+#         print(j, end=' ')
+#     # empty line after each row
+#     print("")
+
 """
 Exercise 3: Calculate the sum of all numbers from 1 to a given number
 Write a program to accept a number from a user and calculate the sum of all numbers from 1 to a given number
@@ -704,6 +721,14 @@ Show Hint
 Show Solution
 
 """
+
+# x=int(input("Bir sayı gir:"))
+# print()
+#
+# y = sum(range(1, x+1, 1))
+#
+# print(y)
+
 """
 
 Exercise 4: Write a program to print multiplication table of a given number
@@ -724,8 +749,19 @@ Show Solution
 
 
 """
-
-
+# x = int(input("Bir sayı gir:"))
+#
+#
+# def katla(x):
+#     return x + 2
+# # print(2)
+# # i = 1
+# # while i <= 20:
+# #     print(x*i)
+# #     i+=2
+# for i in range(2,22,2) :
+#
+#     print(i)
 
 """
 Exercise 5: Display numbers from a list using loop
@@ -747,8 +783,19 @@ Refer: break and continue in Python
 Show Hint
 Show Solution
 """
-
-
+# numbers = [12, 75, 150, 180, 145, 525, 50]
+#
+# z = []
+# for i in numbers:
+#     if i >= 150:
+#         pass
+#     elif i > 500:
+#         break
+#     else:
+#         if i % 5 == 0:
+#             z.append(i)
+#
+# print(*z)
 
 """
 Exercise 6: Count the total number of digits in a number
@@ -760,8 +807,11 @@ Show Hint
 Show Solution
 
 """
-
-
+# x = list(input("Bir sayı giriniz :"))
+#
+# # y= list(x)
+#
+# print("Girdiğiniz sayının basamak adedi : "+str(len(x)))
 
 """
 Exercise 7: Print the following pattern
@@ -777,10 +827,13 @@ Refer: Print patterns in Python
 Show Hint
 Show Solution
 
-
 """
-
-
+# j = 6
+# while j != 0:
+#     for i in range(j-1, 0, -1):
+#         print(i, end=' ')
+#     print("\n")
+#     j -= 1
 
 """
 Exercise 8: Print list in reverse order using a loop
@@ -796,6 +849,20 @@ Expected output:
 10
 Show Hint
 Show Solution
+
+"""
+list1 = [10, 20, 30, 40, 50]
+
+print(list1[-1:-5])
+
+
+
+
+
+
+
+
+"""
 Exercise 9: Display numbers from -10 to -1 using for loop
 Expected output:
 
@@ -814,8 +881,6 @@ See: Reverse range
 Show Solution
 
 """
-
-
 
 """
 
@@ -839,8 +904,6 @@ Show Solution
 
 
 """
-
-
 
 """
 
@@ -869,8 +932,6 @@ Show Solution
 
 """
 
-
-
 """
 
 
@@ -887,8 +948,6 @@ Show Hint
 Show Solution
 
 """
-
-
 
 """
 
@@ -909,8 +968,6 @@ Show Solution
 
 """
 
-
-
 """
 
 Exercise 14: Reverse a given integer number
@@ -924,8 +981,6 @@ Expected output:
 
 Show Solution
 """
-
-
 
 """
 
@@ -943,8 +998,6 @@ Show Hint
 Show Solution
 
 """
-
-
 
 """
 
@@ -967,8 +1020,6 @@ Show Hint
 Show Solution
 
 """
-
-
 
 """
 
@@ -1001,6 +1052,3 @@ Show Hint
 Show Solution
 
 """
-
-
-
