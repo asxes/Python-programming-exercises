@@ -851,17 +851,15 @@ Show Hint
 Show Solution
 
 """
-list1 = [10, 20, 30, 40, 50]
-
-print(list1[-1:-5])
-
-
-
-
-
-
-
-
+# list1 = [10, 20, 30, 40, 50]
+# z=[]
+# i=4
+# while i>=0 :
+#     z.append(list1[i])
+#     i-=1
+#
+# for i in z :
+#     print
 """
 Exercise 9: Display numbers from -10 to -1 using for loop
 Expected output:
@@ -881,6 +879,11 @@ See: Reverse range
 Show Solution
 
 """
+# i = -10
+# while i <= -1:
+#     print(i)
+#     i += 1
+
 
 """
 
@@ -905,10 +908,15 @@ Show Solution
 
 """
 
+# for i in range(5):
+#     print(i)
+# print("done!")
+
 """
 
 Exercise 11: Write a program to display all prime numbers within a range
-Note: A Prime Number is a number that cannot be made by multiplying other whole numbers. A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers
+Note: A Prime Number is a number that cannot be made by multiplying other whole numbers. 
+A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers
 
 Examples:
 
@@ -931,6 +939,30 @@ Prime numbers between 25 and 50 are:
 Show Solution
 
 """
+# start = 25
+# end = 50
+# z = list(range(25, 51))
+# x=[]
+# i = 0
+#
+# while i < len(z):
+#     if z[i] % 2 == 0:
+#         x.append(z[i])
+#     elif z[i] % 3 == 0:
+#         x.append(z[i])
+#     elif z[i] % 4 == 0:
+#         x.append(z[i])
+#     elif z[i] % 5 == 0:
+#         x.append(z[i])
+#     elif z[i] % 7 == 0:
+#         x.append(z[i])
+#     else:
+#         pass
+#     i += 1
+#
+# difference = list(set(z) - set(x))
+#
+# print(*difference)
 
 """
 
@@ -948,6 +980,16 @@ Show Hint
 Show Solution
 
 """
+# z=[]
+# z.append(0)
+# z.append(1)
+# i=0
+#
+# while i<8 :
+#     z.append(z[i]+z[i+1])
+#     i+=1
+#
+# print(*z)
 
 """
 
@@ -967,6 +1009,11 @@ Show Solution
 
 
 """
+# import math
+# x = int(input("Bir sayı gir :"))
+#
+# print("verilen sayının faktöryeli = "+ str(math.factorial(x)))
+
 
 """
 
@@ -981,6 +1028,17 @@ Expected output:
 
 Show Solution
 """
+# x= list(input("bir sayı gir : "))
+#
+# x.reverse()
+#
+# a_string = "".join(x)
+#
+# res = int(a_string)
+#
+#
+# print(x)
+# print(a_string)
 
 """
 
@@ -998,42 +1056,17 @@ Show Hint
 Show Solution
 
 """
+# my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# z=[]
+#
+# i=1
+# while i<=9 :
+#     z.append(my_list[i])
+#     i+=2
+#
+# print(*z)
 
 """
-
-Exercise 16: Calculate the cube of all numbers from 1 to a given number
-Write a program to rint the cube of all numbers from 1 to a given number
-
-Given:
-
-input_number = 6
-
-Expected output:
-
-Current Number is : 1  and the cube is 1
-Current Number is : 2  and the cube is 8
-Current Number is : 3  and the cube is 27
-Current Number is : 4  and the cube is 64
-Current Number is : 5  and the cube is 125
-Current Number is : 6  and the cube is 216
-Show Hint
-Show Solution
-
-"""
-
-"""
-
-Exercise 17: Find the sum of the series upto n terms
-Write a program to calculate the sum of series up to n term. For example, if n =5 the series will become 2 + 22 + 222 + 2222 + 22222 = 24690
-
-Given:
-
-# number of terms
-n = 5
-Expected output:
-
-24690
-Show Solution
 Exercise 18: Print the following pattern
 Write a program to print the following start pattern using the for loop
 
@@ -1052,3 +1085,16 @@ Show Hint
 Show Solution
 
 """
+# i=1
+# while i <=5 :
+#     if i !=6 :
+#         print("*" * i)
+#     i += 1
+#
+# if i==6 :
+#     j=4
+#     while j > 0 :
+#         print("*" * j)
+#         j = j-1
+
+
