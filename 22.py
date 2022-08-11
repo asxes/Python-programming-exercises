@@ -1131,32 +1131,16 @@ Printing values
 
 """
 
-
-"""
-
-Exercise 3: Return multiple values from a function
-Write a program to create function calculation() such that it can accept two variables and calculate addition and subtraction. Also, it must return both addition and subtraction in a single return call.
-
-Given:
-
-def calculation(a, b):
-    # Your Code
-
-res = calculation(40, 10)
-print(res)
-Expected Output
-
-50, 30
-Expected Output:
-
-Show Hint
-Show Solution
-
+# def func1(x, y, z):
+#     return print(x, y, z)
+#
+#
+# func1(20, 40, 60)
+# func1(80, 100, 0)
 
 """
 
 
-"""
 
 
 Exercise 4: Create a function with a default argument
@@ -1180,6 +1164,13 @@ Show Solution
 
 """
 
+# def showEmployee(name, salary=9000):
+#
+#         print("Name :" + name + " Salary :" + str(salary))
+#
+# showEmployee("Ben")
+# showEmployee("Jessa", 12000)
+
 
 """
 
@@ -1189,6 +1180,15 @@ Create an inner function inside an outer function that will calculate the additi
 At last, an outer function will add 5 into addition and return it
 Show Solution
 """
+
+# def outer(a,b) :
+#
+#     def inner() :
+#         return a+b
+#
+#     return print(inner()+5)
+#
+# outer(3,4)
 
 
 """
@@ -1206,6 +1206,15 @@ Show Solution
 
 """
 
+# def addition(num):
+#     if num:
+#         # call same function by reducing number by 1
+#         return num + addition(num - 1)
+#     else:
+#         return 0
+#
+# res = addition(10)
+# print(res)
 
 """
 
@@ -1225,6 +1234,16 @@ Show Hint
 Show Solution
 
 """
+# def display_student(name, age):
+#     print(name, age)
+#
+# # call using original name
+# display_student("Emma", 26)
+#
+# # assign new name
+# showStudent = display_student
+# # call using new name
+# showStudent("Emma", 26)
 
 
 """
@@ -1237,17 +1256,165 @@ Show Hint
 Show Solution
 
 """
-
+# print(list(range(4, 30, 2)))
 
 """
 
 Exercise 9: Find the largest item from a given list
-x = [4, 6, 8, 24, 12, 2]
 Expected Output:
 
-24
+
+"""
+
+# x = [4, 6, 8, 24, 12, 2,89]
+# print(max(x))
+
+"""
+//////////////////////////////////////**** Python Input and Output Exercise *****//////////////////////////////
+
+Exercise 1: Accept numbers from a user
+Write a program to accept two numbers from the user and calculate multiplication
+
+Help: Take user input in Python
+
+"""
+
+
+
+"""
+Exercise 2: Display three string “Name”, “Is”, “James” as “Name**Is**James”
+Use the print() function to format the given words in the mentioned format. Display the ** separator between each string.
+
+Expected Output:
+
+For example: print('Name', 'Is', 'James') will display Name**Is**James
+"""
+
+
+
+"""
+Exercise 3: Convert Decimal number to octal using print() output formatting
+Given:
+
+num = 8
+Expected Output:
+
+The octal number of decimal number 8 is 10
+
 Show Hint
 Show Solution
+Exercise 4: Display float number with 2 decimal places using print()
+Given:
+
+num = 458.541315
+Expected Output:
+
+458.54
+Show Hint
+Show Solution
+Exercise 5: Accept a list of 5 float numbers as an input from the user
+Refer:
+
+Take list as a input in Python.
+Python list
+Expected Output:
+
+[78.6, 78.6, 85.3, 1.2, 3.5]
+
+Show Hint
+Show Solution
+numbers = []
+
+# 5 is the list size
+# run loop 5 times
+for i in range(0, 5):
+    print("Enter number at location", i, ":")
+    # accept float number from user
+    item = float(input())
+    # add it to the list
+    numbers.append(item)
+
+print("User List:", numbers)
+ Run
+Exercise 6: Write all content of a given file into a new file by skipping line number 5
+See:
+
+Python file handling
+Python Read file
+Python write file
+Create a test.txt file and add the below content to it.
+
+Given test.txt file:
+
+line1
+line2
+line3
+line4
+line5
+line6
+line7
+Expected Output: new_file.txt
+
+line1
+line2
+line3
+line4
+line6
+line7
+Show Hint
+Show Solution
+Exercise 7: Accept any three string from one input() call
+Write a program to take three names as input from a user in the single input() function call.
+
+See: Get multiple inputs from a user in one line
+
+Show Hint
+Expected Output
+
+Enter three string Emma Jessa Kelly
+Name1: Emma
+Name2: Jessa
+Name3: Kelly
+Show Solution
+Exercise 8: Format variables using a string.format() method.
+Write a program to use string.format() method to format the following three variables as per the expected output
+
+Given:
+
+totalMoney = 1000
+quantity = 3
+price = 450
+Expected Output:
+
+I have 1000 dollars so I can buy 3 football for 450.00 dollars.
+Show Solution
+Exercise 9: Check file is empty or not
+Write a program to check if the given file is empty or not
+
+Show Hint
+Show Solution
+Exercise 10: Read line number 4 from the following file
+See:
+
+Read Specific Lines From a File in Python
+Python read file
+Create a test.txt file and add the below content to it.
+
+test.txt file:
+
+line1
+line2
+line3
+line4
+line5
+line6
+line7
+
+
+
+
+
+
 
 
 
