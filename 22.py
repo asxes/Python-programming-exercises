@@ -635,7 +635,6 @@ emp_dict = {
 #
 # print(emp_dict)
 
-# /************************************************************************************************************************/
 # /**************************************             LOOPS              *************************************************/
 
 
@@ -1279,8 +1278,14 @@ Help: Take user input in Python
 
 
 """
-
-
+# sayi1 = int(input("sayi1 gir :"))
+# sayi2 = int(input("sayi2 gir :"))
+#
+# def mul(sayi1, sayi2):
+#     print("\n")
+#     print( sayi1 * sayi2)
+#
+# mul(sayi1, sayi2)
 
 """
 Exercise 2: Display three string “Name”, “Is”, “James” as “Name**Is**James”
@@ -1291,7 +1296,7 @@ Expected Output:
 For example: print('Name', 'Is', 'James') will display Name**Is**James
 """
 
-
+# print('Name'+"**" 'Is'+"**" 'James')
 
 """
 Exercise 3: Convert Decimal number to octal using print() output formatting
@@ -1302,8 +1307,9 @@ Expected Output:
 
 The octal number of decimal number 8 is 10
 
-Show Hint
-Show Solution
+"""
+# ne diyor anlamadım
+"""
 Exercise 4: Display float number with 2 decimal places using print()
 Given:
 
@@ -1311,8 +1317,10 @@ num = 458.541315
 Expected Output:
 
 458.54
-Show Hint
-Show Solution
+"""
+# num = 458.541315
+# print('%.2f' % num)
+"""
 Exercise 5: Accept a list of 5 float numbers as an input from the user
 Refer:
 
@@ -1322,21 +1330,18 @@ Expected Output:
 
 [78.6, 78.6, 85.3, 1.2, 3.5]
 
-Show Hint
-Show Solution
-numbers = []
+"""
+# z=[]
+#
+# x=input("sayı giriniz: çıkmak için q ... ")
+#
+# while x !='q' :
+#         z.append(x)
+#         x=input("sayı giriniz: çıkmak için q ... ")
+# print(*z)
 
-# 5 is the list size
-# run loop 5 times
-for i in range(0, 5):
-    print("Enter number at location", i, ":")
-    # accept float number from user
-    item = float(input())
-    # add it to the list
-    numbers.append(item)
+"""
 
-print("User List:", numbers)
- Run
 Exercise 6: Write all content of a given file into a new file by skipping line number 5
 See:
 
@@ -1362,8 +1367,32 @@ line3
 line4
 line6
 line7
-Show Hint
-Show Solution
+"""
+
+# Ben yapmadım
+
+
+# with open("test.txt", "r") as fp:
+#     # read all lines from a file
+#     lines = fp.readlines()
+#
+# # open new file in write mode
+# with open("new_file.txt", "w") as fp:
+#     count = 0
+#     # iterate each lines from a test.txt
+#     for line in lines:
+#         # skip 5th lines
+#         if count == 4:
+#             count += 1
+#             continue
+#         else:
+#             # write current line
+#             fp.write(line)
+#         # in each iteration reduce the count
+#         count += 1
+
+
+"""
 Exercise 7: Accept any three string from one input() call
 Write a program to take three names as input from a user in the single input() function call.
 
@@ -1376,9 +1405,18 @@ Enter three string Emma Jessa Kelly
 Name1: Emma
 Name2: Jessa
 Name3: Kelly
-Show Solution
+# """
+# x= input("isimleri giriniz :")
+#
+# y=x.split()
+# print(*y[0])
+# print(*y[1])
+# print(*y[2])
+
+"""
 Exercise 8: Format variables using a string.format() method.
-Write a program to use string.format() method to format the following three variables as per the expected output
+Write a program to use string.format() method to format the following 
+three variables as per the expected output
 
 Given:
 
@@ -1388,12 +1426,29 @@ price = 450
 Expected Output:
 
 I have 1000 dollars so I can buy 3 football for 450.00 dollars.
-Show Solution
+"""
+# totalMoney = 1000
+# quantity = 3
+# price = 450
+#
+# x= "I have {} dollars so I can buy {} football for {:.2f} dollars."
+# print(x.format(totalMoney,quantity,price))
+
+
+
+"""
 Exercise 9: Check file is empty or not
 Write a program to check if the given file is empty or not
 
-Show Hint
-Show Solution
+"""
+# with open("new_file.txt", "r") as fp:
+#     lines = fp.readlines()
+#     z = list(lines)
+#     if len(z) ==0 :
+#         print("dosya boş")
+#     else:
+#         print("dosya dolu")
+"""
 Exercise 10: Read line number 4 from the following file
 See:
 
@@ -1411,12 +1466,18 @@ line5
 line6
 line7
 
-
-
-
-
-
-
-
-
 """
+
+# with open("test2.txt", "w") as fp:
+#
+#     i=1
+#     while i<=7 :
+#
+#         fp.write("line"+str(i))
+#         fp.write("\n")
+#
+#         i+=1
+
+
+# //////////////////////////////////////**** String Excercises *****//////////////////////////////
+
