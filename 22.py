@@ -1655,7 +1655,9 @@ AzbycX
 
 """
 Exercise 7: String characters balance Test
-Write a program to check if two strings are balanced. For example, strings s1 and s2 are balanced if all the characters in the s1 are present in s2. The character’s position doesn’t matter.
+Write a program to check if two strings are balanced.
+ For example, strings s1 and s2 are balanced if all the characters in the s1 are present in s2. 
+ The character’s position doesn’t matter.
 
 Given:
 
@@ -1675,6 +1677,23 @@ Expected Output:
 False
 
 """
+# s1 = "Yn"
+# s2 = "PYnative"
+# j = 0
+#
+# source = list(s1)
+# target = list(s2)
+#
+# for i in source:
+#     if i in target:
+#         j += 1
+#     else:
+#         pass
+#
+# if j == len(s1):
+#     print("True")
+# else:
+#     print("False")
 
 """
 Exercise 8: Find all occurrences of a substring in a given string by ignoring the case
@@ -1688,6 +1707,11 @@ Expected Outcome:
 The USA count is: 2
 
 """
+# str1 = "Welcome to USA. usa awesome, isn't it?"
+# str2 = str1.upper()
+#
+# x=int(str2.count("USA"))
+# print(x)
 
 """
 Exercise 9: Calculate the sum and average of the digits present in a string
