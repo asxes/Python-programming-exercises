@@ -1435,7 +1435,6 @@ I have 1000 dollars so I can buy 3 football for 450.00 dollars.
 # print(x.format(totalMoney,quantity,price))
 
 
-
 """
 Exercise 9: Check file is empty or not
 Write a program to check if the given file is empty or not
@@ -1467,7 +1466,7 @@ line6
 line7
 
 """
-a
+
 # with open("test2.txt", "w") as fp:
 #
 #     i=1
@@ -1490,8 +1489,12 @@ str1 = "James"
 Expected Output:
 
 Jms
-Show Hint
-Show Solution
+"""
+# str1 = "James"
+# z=list(str1)
+# print(*z[0],z[2],z[4])
+
+"""
 Exercise 1B: Create a string made of the middle three characters
 Write a program to create a new string made of the middle three characters of an input string.
 
@@ -1511,8 +1514,18 @@ Output
 Son
 
 """
-
-
+# def get_middle_three_chars(str1):
+#     print("Original String is", str1)
+#
+#     # first get middle index number
+#     mi = int(len(str1) / 2)
+#
+#     # use string slicing to get result characters
+#     res = str1[mi - 1:mi + 2]
+#     print("Middle three chars are:", res)
+#
+# get_middle_three_chars("JhonDipPeta")
+# get_middle_three_chars("JaSonAy")
 
 
 """
@@ -1530,9 +1543,15 @@ Expected Output:
 AuKellylt
 
 """
-
-
-
+# s1 = "Ault"
+# s2 = "Kelly"
+#
+# mi = int(len(s1) / 2)
+# print(mi)
+#
+# res = s1[mi:mi + 2]
+#
+#
 
 """
 Exercise 3: Create a new string made of the first, middle, and last characters of each input string
@@ -1548,9 +1567,6 @@ AJrpan
 
 """
 
-
-
-
 """
 Exercise 4: Arrange string characters such that lowercase letters should come first
 Given string contains a combination of the lower and upper case letters. Write a program to arrange the characters of a string so that all lowercase letters should come first.
@@ -1563,9 +1579,20 @@ Expected Output:
 yaivePNT
 
 """
-
-
-
+# str1 = "PyNaTive"
+# z = list(str1)
+# zup = []
+# zlow = []
+#
+# i = 0
+# while i < 8:
+#     if z[i].isupper():
+#         zup.append(z[i])
+#     else:
+#         zlow.append(z[i])
+#     i += 1
+#
+# print(*zlow,*zup)
 
 """
 Exercise 5: Count all letters, digits, and special symbols from a given string
@@ -1581,9 +1608,26 @@ Digits = 3
 Symbol = 4
 
 """
-
-
-
+# str1 = "P@#yn26at^&i5ve"
+# x = "<class 'str'>"
+# y = "<class 'int'>"
+# z=list(str1)
+#
+# char = 0
+# digit = 0
+# sym = 0
+# i = 0
+# while i < len(z):
+#     if z[i].isalpha():
+#         char += 1
+#     elif z[i].isdigit():
+#         digit += 1
+#     else:
+#         sym += 1
+#
+#     i += 1
+#
+# print(f"char : {char} , digit : {digit} Symbol : {sym}")
 
 """
 Exercise 6: Create a mixed String using the following rules
@@ -1597,9 +1641,17 @@ Expected Output:
 
 AzbycX
 """
-
-
-
+# s1 = "Abc"
+# s2 = "Xyz"
+# x = list(s1)
+# y = list(s2)
+# z = []
+# i = 0
+# while i <= 2:
+#     z.append(x[i])
+#     z.append(y[2-i])
+#     i += 1
+# print(*z)
 
 """
 Exercise 7: String characters balance Test
@@ -1624,9 +1676,6 @@ False
 
 """
 
-
-
-
 """
 Exercise 8: Find all occurrences of a substring in a given string by ignoring the case
 Write a program to find all occurrences of “USA” in a given string ignoring the case.
@@ -1639,9 +1688,6 @@ Expected Outcome:
 The USA count is: 2
 
 """
-
-
-
 
 """
 Exercise 9: Calculate the sum and average of the digits present in a string
@@ -1656,9 +1702,6 @@ Sum is: 38 Average is  6.333333333333333
 
 """
 
-
-
-
 """
 Exercise 10: Write a program to count occurrences of all characters within a string
 Given:
@@ -1670,9 +1713,6 @@ Expected Outcome:
 
 """
 
-
-
-
 """
 Exercise 11: Reverse a given string
 Given:
@@ -1683,9 +1723,6 @@ Expected Output:
 evitanYP
 
 """
-
-
-
 
 """
 Exercise 12: Find the last position of a given substring
@@ -1699,9 +1736,6 @@ Expected Output:
 Last occurrence of Emma starts at index 43
 
 """
-
-
-
 
 """
 Exercise 13: Split a string on hyphens
@@ -1722,9 +1756,6 @@ scientist
 
 """
 
-
-
-
 """
 Exercise 14: Remove empty strings from a list of strings
 Given:
@@ -1740,9 +1771,6 @@ After removing empty strings
 
 """
 
-
-
-
 """
 Exercise 15: Remove special symbols / punctuation from a string
 Given:
@@ -1754,9 +1782,6 @@ Expected Output:
 
 """
 
-
-
-
 """
 Exercise 16: Removal all characters from a string except integers
 Given:
@@ -1767,9 +1792,6 @@ Expected Output:
 2510
 
 """
-
-
-
 
 """
 Exercise 17: Find words with both alphabets and numbers
@@ -1785,9 +1807,6 @@ scientist50
 
 """
 
-
-
-
 """
 Exercise 18: Replace each special symbol with # in the following string
 Given:
@@ -1799,4 +1818,3 @@ Expected Output:
 
  
  """
-
