@@ -1726,25 +1726,25 @@ Expected Outcome:
 Sum is: 38 Average is  6.333333333333333
 
 """
-str1 = "PYnative29@#8496"
-x=tuple(str1)
-z=0
-i=0
-
-
-while i < len(x):
-    if x[i].isdigit():
-        z+=int(x[i])
-
-    else:
-        pass
-
-    i += 1
-
-
-average=z/len(x)
-
-print(f"Sum is: {z} Average is  {average}")
+# str1 = "PYnative29@#8496"
+# x=tuple(str1)
+# z=0
+# i=0
+#
+#
+# while i < len(x):
+#     if x[i].isdigit():
+#         z+=int(x[i])
+#
+#     else:
+#         pass
+#
+#     i += 1
+#
+#
+# average=z/len(x)
+#
+# print(f"Sum is: {z} Average is  {average}")
 
 
 """
@@ -1757,6 +1757,15 @@ Expected Outcome:
 {'A': 1, 'p': 2, 'l': 1, 'e': 1}
 
 """
+# str1 = "Apple"
+# z = list(str1)
+# y = {}
+#
+# for i in z:
+#     x = int(str1.count(i))
+#     y[i] = x
+#
+# print(y)
 
 """
 Exercise 11: Reverse a given string
@@ -1768,6 +1777,9 @@ Expected Output:
 evitanYP
 
 """
+# str1 = "PYnative"
+# z=list(str1)
+# print(*z[::-1])
 
 """
 Exercise 12: Find the last position of a given substring
@@ -1781,6 +1793,8 @@ Expected Output:
 Last occurrence of Emma starts at index 43
 
 """
+# str1 = "Emma is a data scientist who knows Python. Emma works at google."
+# print("Last occurrence of Emma starts at index",str1.rfind("Emma"))
 
 """
 Exercise 13: Split a string on hyphens
@@ -1800,6 +1814,10 @@ data
 scientist
 
 """
+# str1 = "Emma-is-a-data-scientist"
+# z=list(str1.split("-"))
+# for i in z:
+#     print(i)
 
 """
 Exercise 14: Remove empty strings from a list of strings
@@ -1815,6 +1833,10 @@ After removing empty strings
 ['Emma', 'Jon', 'Kelly', 'Eric']
 
 """
+# str_list = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+#
+# result = filter(lambda x: x != '' and x is not None, str_list)
+# print(list(result))
 
 """
 Exercise 15: Remove special symbols / punctuation from a string
@@ -1826,6 +1848,12 @@ Expected Output:
 "Jon is developer musician"
 
 """
+# str1 = "/*Jon is @developer & musician"
+# str2 = str1.split()
+#
+# new_string = ''.join(char for char in str2 if char.isalnum())
+# print(new_string)
+
 
 """
 Exercise 16: Removal all characters from a string except integers
@@ -1837,6 +1865,15 @@ Expected Output:
 2510
 
 """
+# str1 = 'I am 25 years and 10 months old'
+# z=list(str1)
+# x=[]
+# for i in z :
+#     if i.isdigit() :
+#         x.append(i)
+#
+# print(*x)
+
 
 """
 Exercise 17: Find words with both alphabets and numbers
@@ -1851,6 +1888,17 @@ Emma25
 scientist50
 
 """
+# str1 = "Emma25 is Data scientist50 and AI Expert"
+# z=list(str1.split())
+# y=[]
+# for i in z :
+#
+#     if  i.isalpha() :
+#         pass
+#     else :
+#         y.append(i)
+# print(*y)
+
 
 """
 Exercise 18: Replace each special symbol with # in the following string
@@ -1863,3 +1911,17 @@ Expected Output:
 
  
  """
+
+# str1 = '/*Jon is @developer & musician!!'
+# x = list(str1)
+# i = 0
+# while i < len(x):
+#     if x[i].isalpha():
+#         pass
+#     elif x[i] == ' ':
+#         pass
+#     else:
+#         x[i] = '#'
+#     i += 1
+#
+# print(*x)
