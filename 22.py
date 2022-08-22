@@ -1715,7 +1715,8 @@ The USA count is: 2
 
 """
 Exercise 9: Calculate the sum and average of the digits present in a string
-Given a string s1, write a program to return the sum and average of the digits that appear in the string, ignoring all other characters.
+Given a string s1, write a program to return the sum and average of the digits that appear in the string,
+ ignoring all other characters.
 
 Given:
 
@@ -1725,6 +1726,26 @@ Expected Outcome:
 Sum is: 38 Average is  6.333333333333333
 
 """
+str1 = "PYnative29@#8496"
+x=tuple(str1)
+z=0
+i=0
+
+
+while i < len(x):
+    if x[i].isdigit():
+        z+=int(x[i])
+
+    else:
+        pass
+
+    i += 1
+
+
+average=z/len(x)
+
+print(f"Sum is: {z} Average is  {average}")
+
 
 """
 Exercise 10: Write a program to count occurrences of all characters within a string
