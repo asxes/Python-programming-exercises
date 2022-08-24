@@ -1930,7 +1930,8 @@ Expected Output:
 
 """
 Exercise 1: Create a list by picking an odd-index items from the first list and even index items from the second
-Given two lists, l1 and l2, write a program to create a third list l3 by picking an odd-index element from the list l1 and even index elements from the list l2.
+Given two lists, l1 and l2, write a program to create a third list l3 by picking an odd-index element from the list 
+l1 and even index elements from the list l2.
 
 Given:
 
@@ -1946,7 +1947,28 @@ Element at even-index positions from list two
 Printing Final third list
 [6, 12, 18, 4, 12, 20, 28]
 """
-
+# l1 = [3, 6, 9, 12, 15, 18, 21]
+# l2 = [4, 8, 12, 16, 20, 24, 28]
+# z1=[]
+# z2=[]
+# z3=[]
+#
+# i=0
+#
+# while i<len(l1) :
+#     if i%2!=0: #tekse
+#         z1.append(l1[i])
+#     else :
+#         z2.append((l2[i]))
+#     i+=1
+#
+# z3=z1+z2
+# print("Element at odd-index positions from list one")
+# print(z1)
+# print(("Element at even-index positions from list two"))
+# print(z2)
+# print("Printing Final third list")
+# print(z3)
 
 
 
@@ -1981,6 +2003,16 @@ After reversing it  [12, 14, 23]
 Chunk  3 [78, 45, 89]
 After reversing it  [89, 45, 78]
 """
+sample_list = [11, 45, 8, 23, 14, 12, 78, 45, 89]
+
+
+start = 0
+end = 12
+step = 3
+for i in range(start, end, step):
+    x = i
+    print(sample_list[x:x+step])
+
 
 
 
