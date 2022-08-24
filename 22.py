@@ -2720,3 +2720,619 @@ True
 """
 
 """/**************Python DATE&TIME Exercise for Beginners***************************/"""
+"""
+
+Exercise 1: Print current date and time in Python
+See: Get Current Date and Time in Python
+
+"""
+
+
+
+
+
+
+"""
+Exercise 2: Convert string into a datetime object
+For example, You received the following date in string format. Please convert it into Python’s DateTime object.
+
+Refer: Python String to DateTime
+
+Given:
+
+date_string = "Feb 25 2020 4:20PM"
+Expected output:
+
+2020-02-25 16:20:00
+"""
+
+
+
+
+
+
+"""Exercise 3: Subtract a week (7 days)  from a given date in Python
+Refer: TimeDelta in Python
+
+Given:
+
+given_date = datetime(2020, 2, 25)
+Expected output:
+
+2020-02-18
+"""
+
+
+
+
+
+
+"""Exercise 4: Print a date in a the following format
+Day_name  Day_number  Month_name  Year
+Refer: Python DateTime Format Using Strftime()
+
+Given:
+
+given_date = datetime(2020, 2, 25)
+Expected output:
+
+Tuesday 25 February 2020
+Refer Date format codes for help
+
+"""
+
+
+
+
+
+
+"""Exercise 5: Find the day of the week of a given date
+Given:
+
+given_date = datetime(2020, 7, 26)
+Expected output:
+
+Sunday
+"""
+
+
+
+
+
+
+"""
+Exercise 6: Add a week (7 days) and 12 hours to a given date
+Given:
+
+# 2020-03-22 10:00:00
+given_date = datetime(2020, 3, 22, 10, 0, 0)
+Expected output:
+
+2020-03-29 22:00:00
+"""
+
+
+
+
+
+
+"""
+
+Exercise 7: Print current time in milliseconds
+"""
+
+
+
+
+
+
+"""
+
+Exercise 8: Convert the following datetime into a string
+Given:
+
+given_date = datetime(2020, 2, 25)
+Expected output:
+
+"2020-02-25 00:00:00"
+"""
+
+
+
+
+
+
+"""Exercise 9: Calculate the date 4 months from the current date
+Given:
+
+# 2020-02-25
+given_date = datetime(2020, 2, 25).date()
+Expected output:
+
+2020-06-25
+"""
+
+
+
+
+
+
+"""Exercise 10: Calculate number of days between two given dates
+Given:
+
+# 2020-02-25
+date_1 = datetime(2020, 2, 25)
+
+# 2020-09-17
+date_2 = datetime(2020, 9, 17)
+Expected output:
+
+205 days
+
+
+
+"""
+
+"""/*******************************Python OOP Exercise for Beginners***************************/"""
+
+
+"""
+OOP Exercise 1: Create a Class with instance attributes
+Write a Python program to create a Vehicle class with max_speed and mileage instance attributes.
+
+Refer:
+
+Classes and Objects in Python
+Instance variables in Python
+"""
+
+
+
+
+
+
+"""
+OOP Exercise 2: Create a Vehicle class without any variables and methods
+"""
+
+
+
+
+
+
+"""
+""""""OOP Exercise 3: Create a child class Bus that will inherit all of the variables and methods of the Vehicle class
+Given:
+
+class Vehicle:
+
+    def __init__(self, name, max_speed, mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+Create a Bus object that will inherit all of the variables and methods of the parent Vehicle class and display it.
+
+Expected Output:
+
+Vehicle Name: School Volvo Speed: 180 Mileage: 12
+Refer: Inheritance in Python
+
+"""
+
+
+
+
+
+
+"""OOP Exercise 4: Class Inheritance
+Given:
+
+Create a Bus class that inherits from the Vehicle class. Give the capacity argument of Bus.seating_capacity() a default value of 50.
+
+Use the following code for your parent Vehicle class.
+
+class Vehicle:
+    def __init__(self, name, max_speed, mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+
+    def seating_capacity(self, capacity):
+        return f"The seating capacity of a {self.name} is {capacity} passengers"
+Expected Output:
+
+The seating capacity of a bus is 50 passengers
+Refer:
+
+Inheritance in Python
+Polymorphism in Python
+"""
+
+
+
+
+
+
+"""
+OOP Exercise 5: Define a property that must have the same value for every class instance (object)
+Define a class attribute”color” with a default value white. I.e., Every Vehicle should be white.
+
+Use the following code for this exercise.
+
+class Vehicle:
+
+    def __init__(self, name, max_speed, mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+
+class Bus(Vehicle):
+    pass
+
+class Car(Vehicle):
+    pass
+Expected Output:
+
+Color: White, Vehicle name: School Volvo, Speed: 180, Mileage: 12
+Color: White, Vehicle name: Audi Q5, Speed: 240, Mileage: 18
+Refer: Class Variable in Python
+
+"""
+
+
+
+
+
+
+"""
+OOP Exercise 6: Class Inheritance
+Given:
+
+Create a Bus child class that inherits from the Vehicle class. The default fare charge of any vehicle is seating capacity * 100. If Vehicle is Bus instance, we need to add an extra 10% on full fare as a maintenance charge. So total fare for bus instance will become the final amount = total fare + 10% of the total fare.
+
+Note: The bus seating capacity is 50. so the final fare amount should be 5500. You need to override the fare() method of a Vehicle class in Bus class.
+
+Use the following code for your parent Vehicle class. We need to access the parent class from inside a method of a child class.
+
+class Vehicle:
+    def __init__(self, name, mileage, capacity):
+        self.name = name
+        self.mileage = mileage
+        self.capacity = capacity
+
+    def fare(self):
+        return self.capacity * 100
+
+class Bus(Vehicle):
+    pass
+
+School_bus = Bus("School Volvo", 12, 50)
+print("Total Bus fare is:", School_bus.fare())
+Expected Output:
+
+Total Bus fare is: 5500.0
+"""
+
+
+
+
+
+
+"""
+OOP Exercise 7: Check type of an object
+Write a program to determine which class a given Bus object belongs to.
+
+Given:
+
+class Vehicle:
+    def __init__(self, name, mileage, capacity):
+        self.name = name
+        self.mileage = mileage
+        self.capacity = capacity
+
+class Bus(Vehicle):
+    pass
+
+School_bus = Bus("School Volvo", 12, 50)
+"""
+
+
+
+
+
+
+"""
+OOP Exercise 8: Determine if School_bus is also an instance of the Vehicle class
+Given:
+
+class Vehicle:
+    def __init__(self, name, mileage, capacity):
+        self.name = name
+        self.mileage = mileage
+        self.capacity = capacity
+
+class Bus(Vehicle):
+    pass
+
+School_bus = Bus("School Volvo", 12, 50)
+
+
+
+
+
+
+"""
+
+"""/*******************************Python JSON Exercise for Beginners***************************/"""
+
+"""
+Exercise 1: Convert the following dictionary into JSON format
+data = {"key1" : "value1", "key2" : "value2"}
+Expected Output:
+
+data = {"key1" : "value1", "key2" : "value2"}
+
+"""
+
+
+
+"""
+
+Exercise 2: https://pynative.com/python-json-exercise/
+
+"""
+
+
+
+"""
+Exercise 3: PrettyPrint following JSON data
+PrettyPrint following JSON data with indent level 2 and key-value separators should be (",", " = ").
+
+sampleJson = {"key1": "value1", "key2": "value2"}
+Expected Output:
+
+{
+  "key1" = "value2",
+  "key2" = "value2",
+  "key3" = "value3"
+}
+
+"""
+
+
+
+"""
+Exercise 4: Sort JSON keys in and write them into a file
+Sort following JSON data alphabetical order of keys
+
+sampleJson = {"id" : 1, "name" : "value2", "age" : 29}
+Expected Output:
+
+{
+    "age": 29,
+    "id": 1,
+    "name": "value2"
+}
+
+"""
+
+
+
+"""
+
+Exercise 5: Access the nested key ‘salary’ from the following JSON
+import json
+
+https://pynative.com/python-json-exercise/
+
+# write code to print the value of salary
+Expected Output:
+
+7000
+"""
+
+
+
+"""
+Exercise 6: Convert the following Vehicle Object into JSON
+import json
+
+class Vehicle:
+    def __init__(self, name, engine, price):
+        self.name = name
+        self.engine = engine
+        self.price = price
+
+vehicle = Vehicle("Toyota Rav4", "2.5L", 32000)
+
+# Convert it into JSON format
+Expected Output:
+
+{
+    "name": "Toyota Rav4",
+    "engine": "2.5L",
+    "price": 32000
+}
+"""
+
+
+
+"""
+Exercise 7: Convert the following JSON into Vehicle Object
+{ "name": "Toyota Rav4", "engine": "2.5L", "price": 32000 }
+For example, we should be able to access Vehicle Object using the dot operator like this.
+
+vehicleObj.name, vehicleObj.engine, vehicleObj.price
+Show Solution
+Exercise 8: Check whether following json is valid or invalid. If Invalid correct it
+{ 
+   "company":{ 
+      "employee":{ 
+         "name":"emma",
+         "payble":{ 
+            "salary":7000
+            "bonus":800
+         }
+      }
+   }
+}
+"""
+
+
+
+"""
+Exercise 9: Parse the following JSON to get all the values of a key ‘name’ within an array
+[ 
+   { 
+      "id":1,
+      "name":"name1",
+      "color":[ 
+         "red",
+         "green"
+      ]
+   },
+   { 
+      "id":2,
+      "name":"name2",
+      "color":[ 
+         "pink",
+         "yellow"
+      ]
+   }
+]
+Expected Output:
+
+["name1", "name2"]
+
+Show Solution
+
+
+"""
+
+"""/*******************************Python Data generation Exercise for Beginners***************************/"""
+
+
+"""
+Exercise 1: Generate 3 random integers between 100 and 999 which is divisible by 5
+Reference article for help: Python get a random number within a range
+
+
+"""
+
+
+
+
+"""
+Exercise 2: Random Lottery Pick. Generate 100 random lottery tickets and pick two lucky tickets from it as a winner.
+Note you must adhere to the following conditions:
+
+The lottery number must be 10 digits long.
+All 100 ticket number must be unique.
+Hint: Generate a random list of 1000 numbers using randrange() and then use the sample() method to pick lucky 2 tickets.
+
+
+"""
+
+
+
+
+"""
+Exercise 3: Generate 6 digit random secure OTP
+Reference article for help:
+
+Python secrets module to generate secure numbers
+Python get a random number within a range
+
+"""
+
+
+
+
+"""
+Exercise 4: Pick a random character from a given String
+Reference article for help: random.choice()
+
+
+"""
+
+
+
+
+"""
+Exercise 5: Generate random String of length 5
+Note: String must be the combination of the UPPER case and lower case letters only. No numbers and a special symbol.
+
+Reference article for help: Generate random String in Python.
+
+
+"""
+
+
+
+
+"""
+Exercise 6: Generate a random Password which meets the following conditions
+Password length must be 10 characters long.
+It must contain at least 2 upper case letters, 1 digit, and 1 special symbol.
+Reference article for help: Generate random String and Password in Python
+
+
+"""
+
+
+
+
+"""
+Exercise 7: Calculate multiplication of two random float numbers
+Note:
+
+First random float number must be between 0.1 and 1
+Second random float number must be between 9.5 and 99.5
+Reference article for help: Generate a random float number between a float range
+
+
+"""
+
+
+
+
+"""
+Exercise 8: Generate random secure token of 64 bytes and random URL
+Reference article for help: Python secrets module to generate a secure token and URL
+
+
+"""
+
+
+
+
+"""
+Exercise 9: Roll dice in such a way that every time you get the same number
+Dice has 6 numbers (from 1 to 6). Roll dice in such a way that every time you must get the same output number. do this 5 times.
+
+Reference article for help:
+
+How to seed random number generator
+random.choice()
+
+"""
+
+
+
+
+"""
+Exercise 10: Generate a random date between given start and end dates
+
+"""
+
+"""/*******************************Python Pandas generation Exercise for Beginners***************************/"""
+"""
+Mutlaka yerinden bak!!!!!!!!!!!!
+"""
+
+"""/*******************************Python Database Programming Exercise ***************************/"""
+
+"""
+Mutlaka yerinden bak!!!!!!!!!!!!
+
+"""
